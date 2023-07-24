@@ -27,8 +27,14 @@ public class Random_hit : MonoBehaviour
             timer += Time.deltaTime;
             if (timer >= randomDelay)
             {
+                timer = 0;
                 PlayRandomAnimation();
                 RandomizeDelay();
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    Debug.Log("hello");
+                    Invoke("SwitchScene", 0.5f);
+                }
             }
         }
     }
@@ -48,7 +54,6 @@ public class Random_hit : MonoBehaviour
     public void OnAnimationEnd()
     {
         isAnimating = false;
-        SwitchScene();
     }
 
     private void SwitchScene()

@@ -349,6 +349,8 @@
 "Assets/Script/Boat_move.cs"
 "Assets/Script/Fishing_01.cs"
 "Assets/Script/KeyInput.cs"
+"Assets/Script/MazeGenerator.cs"
+"Assets/Script/MoveTest_01.cs"
 "Assets/Script/Random_hit.cs"
 "Assets/Water Float/Core/WaterFloat.cs"
 "Assets/Water Float/Demo/Standard Assets/Environment/Water/Water/Scripts/Displace.cs"

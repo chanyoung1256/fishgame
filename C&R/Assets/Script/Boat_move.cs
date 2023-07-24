@@ -55,11 +55,9 @@ public class Boat_move : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            GameObject.Find("tank").transform.position = new Vector3(0, 0, 0);
+            GameObject.Find("Boat").transform.position = new Vector3(0, 0, 0);
         }
-
-        if (Input.inputString != "") Debug.Log(Input.inputString);
-
+        
         transform.Translate(0f, 0f, v * moveSpeed * Time.deltaTime);
 
         transform.Rotate(0f, h * turnSpeed * Time.deltaTime, 0f);
